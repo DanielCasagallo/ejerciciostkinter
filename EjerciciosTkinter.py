@@ -63,3 +63,12 @@ Label(root,text="""Escoja un lenguaje de programación:""",justify = LEFT,padx =
 for txt, val in languages:
  Radiobutton(root,text=txt,indicatoron =0,width = 20,padx = 20,variable=v,command=ShowChoice,value=val).pack(anchor=W)
 mainloop()
+
+#Ejercicio 7
+
+master = Tk()
+var1 = IntVar()
+Checkbutton(master, text="Hombre", variable=var1).grid(row=0, sticky=W)
+var2 = IntVar()
+Checkbutton(master, text="Mujer", variable=var2).grid(row=1, sticky=W)
+mainloop()
